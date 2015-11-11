@@ -22,4 +22,3 @@ The following volumes must be mapped, when running container
 - /mnt/music
 - /mnt/downloads/[Music]:/mnt/downloads
 - /mnt/blackhole/[Music]:/mnt/blackhole
-s
