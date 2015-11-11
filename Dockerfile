@@ -23,7 +23,7 @@ RUN git clone https://github.com/rembo10/headphones.git /srv/headphones/app
 #Copy over start script and docker-gen files
 ADD ./start.sh /srv/start.sh
 RUN chmod u+x  /srv/start.sh
-ADD ./template/headphones.tmpl /src/headphones/config/headphones.tmpl
+ADD ./template/headphones.tmpl /srv/headphones/config/headphones.tmpl
 
 VOLUME ["/srv/headphones/app", "/srv/headphones/config", "/srv/headphones/data"]
 
