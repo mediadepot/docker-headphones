@@ -1,6 +1,6 @@
 [General]
 config_version = 5
-http_port = $HEADPHONES_LISTEN_PORT
+http_port = 8081
 http_host = 0.0.0.0
 http_username = $DEPOT_USER
 http_password = $DEPOT_PASSWORD
@@ -37,8 +37,8 @@ correct_metadata = 1
 freeze_db = 0
 move_files = 1
 rename_files = 1
-folder_format = $Artist/$Album [$Year]
-file_format = $Track $Artist - $Album [$Year] - $Title
+folder_format = $$Artist/$$Album [$$Year]
+file_format = $$Track $$Artist - $$Album [$$Year] - $$Title
 file_underscores = 0
 cleanup_files = 0
 keep_nfo = 0
