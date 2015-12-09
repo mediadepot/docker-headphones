@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
 if [ ! -f /srv/headphones/config/headphones.ini ]; then
 	#generate the config file for the first time using cheetah
-
-	cheetah fill --oext ini --env /srv/headphones/config/headphones
+	confd -onetime -backend rancher -prefix /2015-07-25
 	chown -R depot:depot /srv/headphones
 
 fi
