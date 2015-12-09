@@ -6,4 +6,4 @@ if [ ! -f /srv/headphones/config/headphones.ini ]; then
 
 fi
 
-su -c "/usr/bin/python /srv/headphones/app/Headphones.py --data_dir /srv/headphones/data --config_file /srv/headphones/config/headphones.ini" depot
+su -c "/usr/bin/python /srv/headphones/app/Headphones.py --datadir /srv/headphones/data --config /srv/headphones/config/headphones.ini" depot
