@@ -1,6 +1,6 @@
 [template]
 src = "headphones.ini.tmpl"
-dest = "/srv/headphones/config/headphones.ini "
+dest = "/srv/headphones/config/headphones.ini"
 keys = [
 	"/self/host/labels/depot.user",
 	"/self/host/labels/depot.password",
