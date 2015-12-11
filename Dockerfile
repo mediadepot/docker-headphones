@@ -22,7 +22,9 @@ ADD ./templates /etc/confd/templates
 #Create headphones folder structure & set as volumes
 RUN mkdir -p /srv/headphones/app && \
 	mkdir -p /srv/headphones/config && \
-	mkdir -p /srv/headphones/data
+	mkdir -p /srv/headphones/data/logs && \
+	mkdir -p /srv/headphones/data/cache
+
 
 
 #Install Headphones
