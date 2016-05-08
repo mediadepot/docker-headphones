@@ -3,9 +3,6 @@
 #run the default config script
 sh /srv/config.sh
 
-#chown the headphones directory by the new user
-chown mediadepot:mediadepot -R /srv/headphones
-
 # download the latest version of HeadPhones
 [[ ! -d /srv/headphones/app/.git ]] && su -c "git clone https://github.com/rembo10/headphones.git /srv/headphones/app" mediadepot
 
@@ -21,6 +18,9 @@ if [ ! -f /srv/headphones/config/headphones.ini ]; then
 	echo "config_version = 5" >> /srv/headphones/config/headphones.ini
 	echo "http_host = 0.0.0.0" >> /srv/headphones/config/headphones.ini
 fi
+
+#chown the headphones directory by the new user
+chown mediadepot:mediadepot -R /srv/headphones
 
 # run HeadPhones
 su -c "/usr/bin/python /srv/headphones/app/Headphones.py --datadir /srv/headphones/data --config /srv/headphones/config/headphones.ini" mediadepot
